@@ -1,0 +1,68 @@
+---
+layout: default
+title: Your New Jekyll Site
+---
+
+<h2 class="subheader">Example Blog Posts</h2>
+<ul class="no-bullet posts">
+  {% for post in site.posts %}
+    <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+  {% endfor %}
+</ul>
+
+<h2 class="subheader">Foundation libsass template</h2>
+
+<p>This is a template to start your own project that uses Grunt and libsass!</p>
+
+<h4>Requirements</h4>
+
+<p>You'll need to have the following items installed before continuing.</p>
+
+<ul class="disc">
+  <li><a href="http://nodejs.org">Node.js</a>: Use the installer provided on the NodeJS website.</li>
+  <li><a href="http://gruntjs.com/">Grunt</a>: Run `[sudo] npm install -g grunt-cli`</li>
+  <li><a href="http://bower.io">Bower</a>: Run `[sudo] npm install -g bower`</li>
+</ul>
+
+<h4>Quickstart</h4>
+
+{% highlight bash %}
+git clone git@github.com:zurb/foundation-libsass-template.git
+npm install && bower install
+{% endhighlight %}
+
+<p>While you're working on your project, run:</p>
+
+{% highlight bash %}
+`grunt`
+{% endhighlight %}
+
+<p>And you're set!</p>
+
+<h4>Directory Strucutre</h4>
+<ul class="disc">
+  <li>`scss/_settings.scss`: Foundation configuration settings go in here</li>
+  <li>`scss/app.scss`: Application styles go here</li>
+</ul>
+
+<h4>Resources</h4>
+<ul class="disc">
+  <li><a href="http://foundation.zurb.com/docs/">Foundation Docs</a></li>
+  <li><a href="http://gruntjs.com/getting-started">Grunt Docs</a></li>
+  <li><a href="http://jekyllrb.com/docs/home/">Jekyll Docs</a></li>
+</ul>
+    
+<h4>Useful articles to read</h4>
+<ul class="disc">
+  <li><a href="http://pletscher.org/blog/2013/05/27/website.html">Jekyll, Bower & Grunt</a></li>
+  <li><a href="http://nicolashery.com/fast-mobile-friendly-website-with-jekyll/">Creating a fast and mobile-friendly website with Jekyll</a></li>
+  <li><a href="http://www.integralist.co.uk/posts/grunt-boilerplate/">Grunt Boilerplate</a></li>
+</ul>
+
+<h4>Useful Examples</h4>
+<ul>
+  <li>https://github.com/nicolashery/nicolashery.com</li>
+  <li>https://github.com/neverstopbuilding/blog</li>
+  <li>https://github.com/rememberlenny/Jekyll-Foundation-SASS</li>
+  <li>https://github.com/jhauraw/foundation-jekyll</li>
+</ul>
